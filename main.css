@@ -1,0 +1,30 @@
+
+body{
+    overflow-x: hidden;
+}
+
+/*GIF*/
+.ff{
+    border: 3px solid black;
+   
+}
+
+
+.logo{
+    width: 80px;
+    height:80px;
+    animation-name: walking;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    /* transform: rotateY(180deg); */
+}
+
+
+@keyframes walking {
+    0% { left: -200px; transform: rotateY(0deg); }  
+    49% { transform: rotateY(0deg); } 
+    50% { left: 105vw; transform: rotateY(0deg); } 
+    51% { transform: rotateY(180deg); } 
+    100% { left: -200px; transform: rotateY(180deg); }
+}
